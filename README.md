@@ -49,20 +49,20 @@ $pdfToText = XPDF\PdfToText::create(array(
 To extract text from PDF, use the `getText` method.
 
 ```php
-$text = $pdtTotext->getText('document.pdf');
+$text = $pdfToText->getText('document.pdf');
 ```
 
 You can optionally extract from a page to another page.
 
 ```php
-$text = $pdtTotext->getText('document.pdf', $from = 1, $to = 4);
+$text = $pdfToText->getText('document.pdf', $from = 1, $to = 4);
 ```
 
 You can also predefined how much pages would be extracted on any call.
 
 ```php
-$pdtTotext->setpageQuantity(2);
-$pdtTotext->getText('document.pdf'); // extracts page 1 and 2
+$pdfToText->setpageQuantity(2);
+$pdfToText->getText('document.pdf'); // extracts page 1 and 2
 ```
 
 ### Use with Silex
